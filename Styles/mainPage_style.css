@@ -35,18 +35,10 @@ body {
   padding-bottom: 200px;
 }
 
-.text_container,
-.submit_container {
+.text_container {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.submit_container {
-  padding-top: 32px;
-}
-
-.text_container {
   height: 45px;
   width: 570px;
   border: 1px#cecece solid;
@@ -67,8 +59,16 @@ body {
   margin-left: 15px;
 }
 
-#submit_button {
+.buttons_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#submit_button, #lucky_button {
   padding: 10px 20px;
+  margin: 0 5px 0 5px;
   background-color: #f8f9fa;
   border: 1px #f8f9fa solid;
   border-radius: 4px;
@@ -76,7 +76,7 @@ body {
   color: #3c4043;
 }
 
-#submit_button:hover {
+#submit_button:hover, #lucky_button:hover {
   cursor: pointer;
   border: 1px #dadce0 solid;
 }
@@ -120,3 +120,13 @@ span:nth-child(3) {
 span:nth-child(5) {
   color: #34a853;
 }
+
+@media (max-width: 624px) {
+  .text_container{
+    width: 90vw;
+  }
+
+  #search_bar {
+    width: 76vw;
+  }
+ }
